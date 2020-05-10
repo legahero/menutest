@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/> 
+	
+	<!-- 开发期用bootstrap.css，发布版用bootstrap.min.css-->
+	<link rel="stylesheet" href="./bootstrap/4.4.1/css/bootstrap.css"  /> 
+    <link rel="stylesheet" href="./css/font-awesome.css"  />
+    <link rel="stylesheet" href="./css/menu.css"  />
+    <link rel="stylesheet" href="./css/special-effects.css"  />
+
+	<title>测试菜单</title>
+</head>
+<body style="background-color:#cccccc">
+
+
+<div class="container-fluid" style="padding-top:6rem;">
+	
+	<nav  class="navbar navbar-expand-md fixed-top menu-gold " style="background:radial-gradient(ellipse at bottom, #0505fe 0%, #25257e 100%);padding-bottom:0px">
+		<button class="navbar-dark navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	  	<span class="navbar-dark navbar-toggler-icon"></span>
+	  	</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse" style="">
+	  	<ul class="nav mr-auto nav-pills" style="font-weight: bold;">
+	    	<li id="topmenu_home" class="nav-item active" ><a class="nav-link" href="#">首页</a></li>                     	
+	      	<li id="topmenu_cms_news" class="nav-item"><a  class="nav-link" href="#">安全动态</a></li>
+	      	<li id="topmenu_cms_notice" class="nav-item "><a  class="nav-link" href="#">公告简讯</a></li> 
+	      	<li id="topmenu_knowledge" class="nav-item " ><a  class="nav-link" href="#">安全知识</a></li>
+	      	<li id="topmenu_video" class="nav-item "><a  class="nav-link"  href="#">安全视频</a></li>               
+	      	<li id="topmenu_cms_interact" class="nav-item "><a  class="nav-link" href="#">互动交流</a></li>
+	     </ul>
+	     </div>
+	 </nav>
+     
+	<ul class="nav menu-sticky" style="top:90%;left:100px">	
+		<li  class="menu-sticky-item" data-toggle="tooltip" data-placement="left" title="粘性菜单1" >
+			<a href="#" target="_blank">
+				<i class="fa fa-user"></i>
+			</a>			
+		</li>
+		<li  class="menu-sticky-item"  >
+			<a href="#" target="_blank" data-toggle="tooltip" data-placement="left" title="粘性菜单2">
+				<i class="fa fa-code"></i>
+			</a>
+		</li>
+		<li  class="menu-sticky-item"  >
+			<a href="#" target="_blank" data-toggle="tooltip" data-placement="bottom" title="粘性菜单3">
+				<i class="fa fa-home"></i>
+			</a>			
+		</li>
+	</ul>
+	<div class="" style="width:100%">
+	<nav class="menu-side col-sm-1" style="min-width: 160px;float: left;">
+			<ul class="nav flex-column" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+				<li class="nav-item active" id="dev_my"  ><a class="nav-link" href="#">左边栏菜单</a></li>
+			    <li class="nav-item" id="dev_map"  ><a class="nav-link" href="#">分布地图</a></li>
+			    
+			    <li class="nav-item" id="fas_term" ><a class="nav-link" href="#">火灾报警终端</a></li>
+			    <li class="nav-item ">
+                	<a href="javascript:;" class="nav-link nav-toggle">
+                    	<i class="fa fa-home"></i>
+                        <span class="title">水系统</span>
+                        <span class="selected"></span>
+                        <span class="arrow"></span>
+                    </a>			       
+                    <ul class="nav flex-column menu-sub">
+                    	<li class="nav-item" id="water_term">
+                        	<a href="#" class="nav-link ">
+                                        <i class="icon-bar-chart"></i>
+                                        <span class="title">水压监测</span>
+                                        <span class="selected"></span>
+                                    </a>
+                    	</li>
+                        <li class="nav-item" id="waterlevel_term">
+                        	<a class="nav-link " href="#" >
+                            	<i class="icon-bulb"></i>
+                                <span class="title">水位监测</span>
+                                <span class="badge badge-success">1</span>
+                            </a>
+                        </li>						
+                	</ul>
+                </li>
+                <li class="nav-item" id="gateway"  ><a class="nav-link" href="#">网点设备</a></li>
+			    <li class="nav-item" id="dev_mng"  ><a class="nav-link" href="#">设备管理</a></li>
+  
+			 </ul>
+	</nav>
+	<div class="col">
+		<div class="menu-btn-circle" style="float:left">
+	    	<a class="btn btn-circle btn-icon-only btn-default" href="javascriptt:;" title="工具栏菜单">
+	        	<i class="fa fa-cloud-upload"></i>
+	        </a>
+	        <a class="btn btn-circle btn-icon-only btn-default" href="javascriptt:;">
+	        	<i class="fa fa-wrench"></i>
+	        </a>
+	        <a title="工具栏菜单3" class="btn btn-circle btn-icon-only btn-default fullscreen" href="javascriptt:;" >
+	        	<i class="fa fa-battery-full" aria-hidden="true"></i> 
+	        </a>
+	        <a class="btn btn-circle btn-icon-only btn-default" href="javascriptt:;">
+	        	<i class="fa fa-trash"></i>
+	        </a>
+	   </div>
+   </div>
+   </div>
+   <nav class="menu-panel">
+            <a class="menu-panel-trigger" href="#0">
+                <span aria-hidden="true"></span>
+            </a>
+            <ul>
+                <li>
+                    <a class="active" href="#" target="_blank">
+                        <span>日程查看</span>
+                        <i class="fa fa-calendar" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <span>客户查看</span>
+                        <i class="fa fa-users"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <span>快速菜单提示3</span>
+                        <i class="fa fa-asterisk" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">
+                        <span>菜单提示4</span>
+                        <i class="fa fa-microchip" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <span class="menu-panel-bg" aria-hidden="true"></span>
+	</nav>
+	<!--  <div class="menu-panel-overlay"></div> -->
+        
+ 
+<div class="menu-panel-push">
+	<ul>
+		<li><a href="#"><div  ><i class="fa fa-users fa-fw fa-lg" aria-hidden="true"></i>在线工具箱</div></a></li>
+		<li><a href="#"><div  ><img src="./images/device_green_l.png">广告&amp;合作</div></a></li>
+		<li><a href="#"><div ><img src="./images/bell_g.png">意见&amp;反馈</div></a></li>
+		<li><a href="#"><div ><i class="fa fa-microchip fa-fw fa-2x" aria-hidden="true"></i>测试活动</div></a></li>
+		<li style="border:none;"><a class="sidetop" href="javascript:goTop();"><i class="fa fa-asterisk fa-fw fa-3x" aria-hidden="true"></i></a></li>
+	</ul>
+</div>
+</div>	
+
+<div class="menu-panel-tool " style="top: 52px; right: 148px;">
+	<ul class="menu-list-sm">
+		<li class="">
+			<button title="点赞" class="height-xl" style="background-color: rgb(207, 207, 207);">
+				<i class="fa fa-home hover-hide"></i>
+				<span class="hover-show text">点赞</span>
+				<p id="supportCount">2</p>	
+			</button>
+		</li>		
+		<li class=" " id="Post" style="background-color: rgb(207, 207, 207);">
+			<a class=" height-sm" href="#">
+				<i class="fa fa-users fa-fw fa-lg hover-hide" aria-hidden="true"></i>
+				<span class="hover-show text">通告</span>
+				<p>
+				</p>
+			</a>			
+		</li>
+		<li class=" " id="Post" style="background-color: rgb(207, 207, 207);">
+			<a class=" height-sm" href="#">
+				<img class="hover-hide" style="width:32px" src="./images/device_green_l.png">
+				<span class="hover-show text">其他</span>
+				<p>
+				</p>
+			</a>			
+		</li>
+		<li class=" " id="sharePost" style="background-color: rgb(207, 207, 207);">
+			<a class=" height-sm" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" class="icon hover-hide" aria-hidden="true" style="padding-top: 3px;">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#icon-csdnc-fenxiang" />
+				</svg>
+				<span class="hover-show text">海报</span>
+				<p>
+				</p>
+			</a>			
+		</li>
+	</ul>
+</div>
+
+<div class="menu-float" style="width:300px;position:fixed; right:30%;top:0px; z-index:10003;float:right;">
+<form class="menu-search" action="#" method="GET">
+		<div class="input-group">
+        	<input name="query" class="form-control input-sm" type="text" placeholder="搜索...">
+            	<span class="input-group-btn">
+                	<a class="btn submit" href="javascript:;">
+                    	<i class="fa fa-search"></i>
+                    	</a>
+                </span>
+        </div>
+</form>
+<span></span>
+</div>                   	
+<script src="./js/jquery-3.3.1.js"  ></script>
+<script src="./bootstrap/4.4.1/js/bootstrap.bundle.js"   ></script>
+<script src="./bootstrap/4.4.1/js/bootstrap.js"   ></script>
+<script src="./js/echarts.js"     ></script> 
+<script src="./js/swiper.js"   ></script>
+<script src="./js/menu.js"   ></script>
+
+<script type="text/javascript">
+</script>
+</body>
+</html>
